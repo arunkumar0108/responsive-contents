@@ -1,0 +1,62 @@
+/* General body styling */
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Container for the entire page content */
+.container {
+ width: 80%;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+/* Style for the image gallery */
+.image-gallery {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr); /* Two images per row */
+ gap: 20px;
+ margin-bottom: 20px;
+}
+
+/* Style for each image item */
+.image-item {
+ border: 2px solid #ccc;
+ border-radius: 8px;
+ overflow: hidden;
+ text-align: center;
+}
+
+/* Style for the images */
+.image-item img {
+ width: 20%;
+ position: relative;
+ left: 40%;
+ height: auto;
+ display: block;
+}
+
+/* Caption style */
+.caption {
+ font-size: 1rem;
+ padding: 10px;
+ background-color: #f4f4f4;
+ margin: 0;
+}
+
+/* Content below the images */
+.content {
+ background-color: #fafafa;
+ padding: 20px;
+ border-radius: 8px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+ .image-gallery {
+     grid-template-columns: 1fr; /* 1 image per row on smaller screens */
+ }
+}
